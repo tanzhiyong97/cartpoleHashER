@@ -86,6 +86,8 @@ class ReplayMemory(object):
 
 
 def make_pair(observation, action):
+    print(observation)
+    print("make_pair的值：", hash(observation.tostring()), action.item())
     return hash(observation.tostring()), action.item()
 
 
